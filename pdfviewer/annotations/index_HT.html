@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- <title>Deal Manager Token Drag Drop</title> -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"> <meta name="description" content="This example demonstrates the Annotations in Javascript (ES5) PDF Viewer Control. Explore here for more details." />
+    <meta name="author" content="Syncfusion" />
+  <!--  <link rel="shortcut icon" href="https://ej2.syncfusion.com/home/favicon.ico" /> -->
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WLQL39J');</script>
+    <!-- End Google Tag Manager -->
+    <script type="text/javascript">
+        var themeName = location.hash || 'material';
+        themeName = themeName.replace('#', '');
+        window.ripple = (themeName === "material")
+        document.write('<link href="../../dist/' + themeName + '.css" rel="stylesheet">');
+    </script>
+    <script type="text/javascript">
+        if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
+            document.write("<script src=\'https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js\'>");
+        }</script>
+    <script src="../../dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    
+    <link href="index.css" rel="stylesheet">
+    <style>
+        #loader {
+            color: #008cff;
+            height: 40px;
+            left: 45%;
+            position: absolute;
+            top: 45%;
+            width: 30%;
+        }
+
+        body {
+            touch-action: none;
+        }
+    </style>
+</head>
+
+<body class='e-view ej2-new' aria-busy="true">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLQL39J"height="0"width="0"style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div hidden id="sync-analytics" data-queue="EJ2 - Javascript (ES5) - Demos"></div>
+    <div class="sample-browser">
+ 
+        <div class='content e-view'>
+            <div class='sample-content'>   
+                <div class="control-content">
+                      <button onclick="SignToken()">Add Sign Token</button>
+					  <button onclick="InitialToken()">Add Initial Token</button>
+					  <button onclick="GetAllTokens()">Get All Tokens</button>
+                </div>
+                    <div class="container-fluid">
+                        <div class="control-section">
+							<div class="control-section">
+								<div class="content-wrapper">
+									<div id="pdfViewer" style="height:640px; width:100%;">
+									</div>
+								</div>
+							</div>
+                        </div>
+                    </div>
+					<div id="dialog"></div>
+            </div>
+
+        </div>
+    </div>
+    
+<script src="index_HT.js" type="text/javascript"></script>
+</body>
+
+</html>
